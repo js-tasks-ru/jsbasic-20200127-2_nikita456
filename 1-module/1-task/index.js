@@ -4,6 +4,17 @@
  * @param {number} n index
  * @returns {number}
  */
-function pow(m, n) {
 
+function pow(x, y) {
+  return x ** y;
 }
+
+pow(3, 4);
+pow(2, 3);
+
+
+
+
+
+
+
