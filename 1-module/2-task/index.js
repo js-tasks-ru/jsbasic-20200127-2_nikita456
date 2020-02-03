@@ -10,10 +10,8 @@ function print(text) {
  * чтобы функция sayHello работала корректно
  */
 function isValid(name) {
-  if (name.length >= 4 && name !== '' && name.length !== 0) {
+  if (!!name && name.length >= 4 && name !== '' && name.length !== 0 && !name.includes(" ")) {
     return true;
-  } else if (name.replace(/\s/g, '') !== '') {
-    return false;
   } else {
     return false;
   }
